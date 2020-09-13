@@ -22,6 +22,8 @@ Estrutura dos packages
 - `Repository` - Classes que fazem interface com os dados, buscam e armazenam informações
 - `Service` - Classes de serviços
 
+Para a criação da agenda foi utilizado o padrão strategy, pois para cada tipo de agenda o seu padrão de criação muda.
+
 ### Execução da Aplicação
 
 - Prerequisitos
