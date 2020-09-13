@@ -10,6 +10,8 @@ Aplicação desenvolvida com Springbooot
 - `Lombok`
 - `Swagger`
 - `Maven`
+- `Junit`
+- `Mockito`
 
 Estrutura dos packages
 
