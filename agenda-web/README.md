@@ -8,6 +8,14 @@ Aplicação desenvolvida com React
 - `React Bootstrap`
 - `Axios`
 
+### Screenshots
+
+Cadastro e listagem
+![](img-doc/preenchimento.png)
+
+Agenda criada
+![](img-doc/agenda_criada.png)
+
 ### Execução da Aplicação
 
 Antes de iniciar a aplicação web certifique-se de executar o [backend](https://github.com/icaromagnago/react-springboot-agenda/tree/master/agenda-api)
