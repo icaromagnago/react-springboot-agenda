@@ -11,6 +11,17 @@ Aplicação desenvolvida com Springbooot
 - `Swagger`
 - `Maven`
 
+Estrutura dos packages
+
+![](img/estrutura_camadas.png)
+
+- `Configuration` - Encontra-se as classes de configuração da aplicação. Ex: Configuração de Cors, Swagger.
+- `domain` - Contém as classes de domínio do negócio
+- `entrypoint` - Ponto de entrada para o sistema, pode ser REST endpoints, Jobs.
+- `gateway` - Faz a interface com sistemas externos
+- `Repository` - Classes que fazem interface com os dados, buscam e armazenam informações
+- `Service` - Classes de serviços
+
 ### Execução da Aplicação
 
 - Prerequisitos
