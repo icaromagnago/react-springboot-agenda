@@ -12,6 +12,7 @@ Aplicação desenvolvida com Springbooot
 - `Maven`
 
 Estrutura dos packages
+
 ![](img/estrutura_camadas.png)
 
 - `Configuration` - Encontra-se as classes de configuração da aplicação. Ex: Configuração de Cors, Swagger.
