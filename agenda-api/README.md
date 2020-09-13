@@ -24,6 +24,8 @@ Estrutura dos packages
 
 Para a criação da agenda foi utilizado o padrão strategy, pois para cada tipo de agenda o seu padrão de criação muda.
 
+![](img/strategy.png)
+
 ### Execução da Aplicação
 
 - Prerequisitos
