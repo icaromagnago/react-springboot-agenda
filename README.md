@@ -23,5 +23,7 @@ Esse pacote  o back-end da aplicação desenvolvida utilizando o Springboot
 - `Lombok`
 - `Swagger`
 - `Maven`
+- `Junit`
+- `Mockito`
 
 Informações de como executar a agenda-web e o agenda-api estão dentro dos referidos pacotes  
