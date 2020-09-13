@@ -26,6 +26,8 @@ Para a criação da agenda foi utilizado o padrão strategy, pois para cada tipo
 
 ![](img/strategy.png)
 
+A única particularidade é em relação ao strategy do fórum. O fórum possui dois strategy, o `CriaAgendaForumStrategy` tem a responsabilidade de cria a agenda no sistema e na api do fórum, já o `CriaAgendaForumDaApiStrategy` tem a responsabilidade de cria no sistema as agendas obtidas da api do fórum.
+
 ### Execução da Aplicação
 
 - Prerequisitos
