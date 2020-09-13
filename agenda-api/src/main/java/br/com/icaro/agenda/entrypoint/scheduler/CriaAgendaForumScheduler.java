@@ -22,7 +22,7 @@ public class CriaAgendaForumScheduler {
 	@Autowired
 	private CriaAgendaStrategyFactory criaAgendaStrategyFactory;
 	
-	//@Scheduled(fixedRateString = "${cria.agenda.forum.scheduler.frequencia}")
+	@Scheduled(fixedRateString = "${cria.agenda.forum.scheduler.frequencia}")
 	public void iniciaScheduler() {
 
 		LOGGER.info("Job Cria Agenda Forum iniciado...");

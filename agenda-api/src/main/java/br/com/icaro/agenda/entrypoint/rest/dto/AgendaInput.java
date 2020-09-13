@@ -28,6 +28,6 @@ public class AgendaInput {
 	
 	@ApiModelProperty(position = 2, value = "Data da agenda", example = "2020-09-12")
 	@JsonFormat(pattern = "yyyy-MM-dd")
-	@NotNull
+	@NotNull(message = "A data da agenda é obrigatório")
 	private LocalDate dataAgenda;
 }
