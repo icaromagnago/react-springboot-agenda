@@ -35,6 +35,14 @@ A única particularidade é em relação ao strategy do fórum. O fórum possui 
 Para a criação de agendas oriundas da api do fórum de tempos em tempos foi utilizado o recurso Scheduler do springboot. O Job está configurado para ser executado
 de 1 em 1 minuto. O scheduler está no package `br.com.icaro.agenda.entrypoint.scheduler`
 
+### Arquitetura com Kafka
+
+Para garantir que todas as agendas entrem no sistema o modelo de arquitetura com kafka é apresentado. O kafka é uma plataforma distribuída de streaming que consegue processar uma grande quantidade de dados e entregá-los em tempo real aos seus consumidores.
+
+![](img/arq_conceitual.png)
+
+De tempos em tempos o producer consome a api do fórum e armazena seus dados no kafka. O consumer de tempos em tempos consome os dados no kafka e armazena-os na base de dados.
+
 ### Execução da Aplicação
 
 - Prerequisitos
