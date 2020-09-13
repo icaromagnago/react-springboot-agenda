@@ -1,6 +1,7 @@
 package br.com.icaro.agenda.entrypoint.rest.impl;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
@@ -44,7 +45,10 @@ public class AgendaControllerImpl implements AgendaController {
 		var agendas = agendaService.listaAgendas();
 		
 		var agendasDto = agendas.stream()
-				.map(agenda -> new ListaAgendaDto(agenda.getId(), agenda.getDataInicio(), agenda.getStatus().getDescricao()))
+				.map(agenda -> new ListaAgendaDto(
+						agenda.getId(), 
+						agenda.getDataInicio(), 
+						agenda.getStatus() != null ? agenda.getStatus().getDescricao() : "-"))
 				.collect(Collectors.toList());
 		
 		var responseBase = new BaseResponse<>(HttpStatus.OK.getReasonPhrase(), agendasDto);
