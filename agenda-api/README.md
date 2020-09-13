@@ -30,6 +30,11 @@ Para a criação da agenda foi utilizado o padrão strategy, pois para cada tipo
 
 A única particularidade é em relação ao strategy do fórum. O fórum possui dois strategy, o `CriaAgendaForumStrategy` tem a responsabilidade de criar a agenda no sistema e na api do fórum, já o `CriaAgendaForumDaApiStrategy` tem a responsabilidade de criar no sistema as agendas obtidas da api do fórum.
 
+### Scheduler Springboot
+
+Para a criação de agendas oriundas da api do fórum de tempos em tempos foi utilizado o recurso Scheduler do springboot. O Job está configurado para ser executado
+de 1 em 1 minuto. O scheduler está no package `br.com.icaro.agenda.entrypoint.scheduler`
+
 ### Execução da Aplicação
 
 - Prerequisitos
