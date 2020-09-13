@@ -1,7 +1,6 @@
 package br.com.icaro.agenda.entrypoint.rest.impl;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
